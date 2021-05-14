@@ -6,7 +6,7 @@ describe('Cread and mark-unmark as favorite', function () {
         cy.SignIn();
     });
 
-    it.only('Create a post', function () {
+    it('Create a post', function () {
         cy.get('ul.navbar-nav').children().as('menu');
         cy.get('@menu').contains('New Post').click();
         cy.hash().should('include', '#/editor');
@@ -19,7 +19,7 @@ describe('Cread and mark-unmark as favorite', function () {
         cy.url().should('include', 'article');
     });
 
-    it.skip('Mark-unmark as favorite', function () {
+    it('Mark-unmark as favorite', function () {
         cy.get('ul.navbar-nav').children().contains('walter1').click();
         cy.contains('My Articles').should('be.visible');
         cy.get('.ion-heart').first().click();
