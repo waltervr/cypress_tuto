@@ -27,7 +27,6 @@ describe('Cread and mark-unmark as favorite', function () {
         cy.url().should('include', 'favorites');
         cy.get('.btn-primary').first().then(($fav) =>{
             return $fav.text();
-            
         }).as('favCount');
         cy.get('@favCount').then(($cnt) => {
             expect(parseInt($cnt)).to.eq(1);
