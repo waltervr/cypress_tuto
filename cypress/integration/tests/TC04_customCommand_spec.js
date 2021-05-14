@@ -1,5 +1,7 @@
 describe('Cread and mark-unmark as favorite', function () {
     
+    Cypress.config('pageLoadTimeout', 10000);
+    
     before(function () {
         cy.SignIn();
     });
