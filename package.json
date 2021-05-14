@@ -1,0 +1,24 @@
+{
+  "name": "cypress_tuto",
+  "version": "1.0.0",
+  "description": "This is a series of small test scripts to understand the usage of cypress.",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^7.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltervr/cypress_tuto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waltervr/cypress_tuto/issues"
+  },
+  "homepage": "https://github.com/waltervr/cypress_tuto#readme"
+}
