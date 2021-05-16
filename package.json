@@ -6,7 +6,9 @@
   "dependencies": {
     "cypress": "^7.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.7"
+  },
   "scripts": {
     "test": "cypress run"
   },
