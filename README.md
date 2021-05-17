@@ -13,7 +13,7 @@ This is a series of small test scripts to understand the usage of cypress.
 3. If everything goes well, close the Cypress Runner and remove the cypress/integration/sample folder with all the test spec included
 
 ## 02 Add intelisense to VS Code for Cypress
-1. Create a new file in the root folder of the project called `jsconfig.js`
+1. Create a new file in the root folder of the project called `jsconfig.json`
 2. Add the following code:
 ```
 {
@@ -194,7 +194,12 @@ describe('Cread and mark-unmark as favorite', function () {
 
 ## 07 Project configuration
 1. Project configuration can be added to the `cypress.json` file in the root folder, for instance the baseURL
-2. Open the `commands.js` file and remove the baseURL from the visit command leaving only the path in, should look like:
+```
+{
+    "baseUrl": "https://react-redux.realworld.io"
+}
+```
+3. Open the `commands.js` file and remove the baseURL from the visit command leaving only the path in, should look like:
 ```
 cy.visit('/#/login');
 ```
