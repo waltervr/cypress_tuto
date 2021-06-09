@@ -617,7 +617,7 @@ describe('Login', function(){
 4. Open the Cypress Runner with `npx cypress open` and execute the test
 
 ## 16 Working with fixtures
-1. Add a new file that will save the user details within the `fixtures` folder called `userLoginDetails` and add the following:
+1. Add a new file that will save the user details within the `fixtures` folder called `userLoginDetails.json` and add the following:
 ```
 {
     "email": "'walter1@gmail.com",
